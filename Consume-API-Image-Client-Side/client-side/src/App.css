@@ -1,0 +1,37 @@
+/* Mengatur container grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Menyesuaikan jumlah kolom secara otomatis berdasarkan lebar kontainer */
+  gap: 10px; /* Jarak antar item grid */
+  padding: 10px; /* Padding di sekitar container grid */
+  border: solid 4px #333;
+}
+
+/* Mengatur item grid */
+.grid-item {
+  padding: 10px; /* Padding di dalam item grid */
+  display: flex; /* Menggunakan flexbox untuk menata konten di dalam item grid */
+  flex-direction: column; /* Mengatur arah konten dalam kolom */
+  align-items: center; /* Menyusun konten di tengah secara horizontal */
+  justify-content: center; /* Menyusun konten di tengah secara vertikal */
+  text-align: center; /* Menyusun teks di tengah item grid */
+}
+
+/* Mengatur gambar */
+.grid-item img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar item grid */
+  height: 60vh; /* Menjaga rasio aspek gambar */
+  display: block; /* Menghilangkan jarak di bawah gambar */
+  margin: 0 auto; /* Memusatkan gambar di dalam item grid */
+}
+
+/* Mengatur teks */
+.grid-item p {
+  margin: 10px 0 0; /* Margin atas teks */
+  font-size: 14px; /* Ukuran font teks */
+  color: #333; /* Warna font teks */
+}
+
+h1{
+  text-align: center;
+}
